@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            echo "image hello-world-njs"
-            echo "args -p 3000:3000"
+            image 'hello-world-njs'
+            args '-p 3000:3000'
         }
     }
     environment {
